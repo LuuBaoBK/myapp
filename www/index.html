@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>My Layout</title>
+	<style type="text/css">
+		div{
+			margin: auto;
+		}
+		div.layout-header{
+			height: 12%;
+			background-color: yellow;
+		}
+		div.layout-body{
+			height: 83%;
+		}
+		div.layout-footer{
+			height: 5%;
+			clear:both;
+		}
+		/*side bar*/
+		div.layout-sidebar{
+			height: 100%;
+			width: 15%;
+			background-color: red;
+			float: left;
+			display :inline-block;
+			vertical-align: top;
+		}
+		/*content*/
+		div.layout-content{
+			height: 100%;
+			width: 85%;
+			float: left;
+			display :inline-block;
+			vertical-align: top;
+		}
+		div.layout-sidebar, div.layout-content{
+			margin: 0;
+			padding: 0;
+			border:none;
+		}
+		ul{
+			list-style-type: none;
+			padding-left: 15px;
+		}
+		li{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	</style>
+</head>
+<body style="margin:auto; height:100%">
+	<div class="wrapper">
+		<div class="layout-header">
+			<h1 style="text-align: center;">My Layout</h1>
+		</div>
+		<div class="layout-body">
+			<div class="layout-sidebar">
+				<h2 style="text-align: center;">Menu</h2>
+				<ul>
+					<li><a href="page1.html" target="iframe_a">1</a></li>
+					<li><a href="page2.html" target="iframe_a">2</a></li>
+					<li><a href="page2.html" target="iframe_a">3</a></li>
+				</ul>
+			</div>
+			<div class="layout-content">
+				<div style="width:50%; margin:auto">
+					<iframe name="iframe_a" style="height:100%; width:100%;></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="layout-footer">
+			<div class="layout-sidebar" style="background-color:yellow; width:50%">
+				<p style="margin:0; text-align:left; font-size:15px">LuuBao@Layout</p>
+			</div>
+			<div class="layout-content" style="background-color:yellow; width:50%">
+				<p style="margin:0; text-align:right; font-size:15px">Demo Layout Version.1.0</p>
+			</di>
+		</div>
+	</div>
+</body>
+</html>
